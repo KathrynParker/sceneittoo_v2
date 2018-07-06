@@ -28,7 +28,7 @@ npm install
 
 ### Screenshots
 
-* Log In Page - Splash screen that promps a user to log in. Logging is needed to keep track of the user's movie lists.
+* Log In Page - Splash screen that prompts a user to log in. Logging is needed to keep track of the user's movie lists.
 
 ![Log In Page](/public/images/readme_screencaps/login_readme.png "Log In")
 
