@@ -6,14 +6,14 @@ var bodyParser = require('body-parser');
 var logger = require('morgan');
 
 
-var indexRouter = require('/routes/index');
-var usersRouter = require('/routes/users');
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
 
 
-const setupAuth = require('/routes/auth');
-const sceneItList = require('/routes/sceneItLIst');
-const aintsceneitRouter = require('/routes/aintsceneit');
-const apiRouter = require('/routes/api');
+const setupAuth = require('./routes/auth');
+const sceneItList = require('./routes/sceneItLIst');
+const aintsceneitRouter = require('./routes/aintsceneit');
+const apiRouter = require('./routes/api');
 
 
 var app = express();
