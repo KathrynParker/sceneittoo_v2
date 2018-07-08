@@ -9,7 +9,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       imdbid: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       title: {
         type: Sequelize.STRING
