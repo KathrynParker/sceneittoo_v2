@@ -1,11 +1,19 @@
 # Scene It Too? v.2.0
 
-Version 2 Contributors: Kathryn Parker
+Version 2 Contributors: </br>
+Alexandra Perrotta - https://github.com/alexperrotta </br>
+Crystal Sills - https://github.com/csills </br>
+Hyun Joo Nam - https://github.com/hyunjoonam </br>
+Kathryn Parker - https://github.com/WarpedWorks </br>
 
-Version 1 Contributors: Hyun Joo Nam, Alexandra Perrotta, Crystal Sills and Kathryn Parker
-For more information about Version 1 go to https://github.com/hyunjoonam/sceneittoo
+Version 1 Contributors: Alexandra Perrotta, Crystal Sills, Hyun Joo Nam and Kathryn Parker </br>
+For more information about Version 1 go to https://github.com/hyunjoonam/sceneittoo </br>
 
 Search for movies and then save them to your "Scene It" list and your "Ain't Scene It" list.
+
+## What's new in version 2.0?
+
+* Currently - version 1 and 2 are the same.
 
 ## What's new in version 1.0?
 
