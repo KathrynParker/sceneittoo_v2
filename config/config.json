@@ -7,18 +7,17 @@
     "dialect": "postgres"
   },
   "test": {
-    "username": "root",
+    "username": "postgres",
     "password": null,
-    "database": "database_test",
+    "database": "sceneittoo",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "postgres"
   },
   "production": {
-    "use_env_variable": "DATABASE_URL",
-    "username": "mzsalyxdzhafkl",
-    "password": "d6b4c191c311b41d4f2b6c56865f4355e579f41c6878a14a626c99a1f5ba6d42",
-    "database": "postgresql-flat-33844",
-    "host": "ec2-54-163-235-56.compute-1.amazonaws.com",
+    "username": "postgres",
+    "password": null,
+    "database": "sceneittoo",
+    "host": "127.0.0.1",
     "dialect": "postgres"
   }
 }
