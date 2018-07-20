@@ -46,7 +46,7 @@ $(function(){
 			method: "GET",
 			success: function(currentMovie){
 				$.post({
-					url: "http://localhost:3000/api/saveaintsceneit",
+					url: "/api/saveaintsceneit",
 					data: {
 						title: currentMovie.Title,
 						imdbid: currentMovie.imdbID,
@@ -81,11 +81,11 @@ $(function(){
 		const button = $(this);
 
         $.ajax({
-			url: "http://www.omdbapi.com/?apikey=4c39544b&i=" + imdbID,
+			url: "https://www.omdbapi.com/?apikey=4c39544b&i=" + imdbID,
 			method: "GET",
 			success: function(currentMovie){
 				$.post({
-					url: "http://localhost:3000/api/savesceneit",
+					url: "/api/savesceneit",
 					data: {
 						title: currentMovie.Title,
 						imdbid: currentMovie.imdbID,
