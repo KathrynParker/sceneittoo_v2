@@ -7,7 +7,7 @@ $(function(){
 		let searchString = $('.search-bar').val();
 		let urlEncodedSearchString = encodeURIComponent(searchString);
 		$.ajax({
-			url: "http://www.omdbapi.com/?i=tt3896198&apikey=4c39544b&s=" + urlEncodedSearchString,
+			url: "https://www.omdbapi.com/?i=tt3896198&apikey=4c39544b&s=" + urlEncodedSearchString,
 			method: "GET",
 			success: function(response){
 				movieData = response.Search;
@@ -42,7 +42,7 @@ $(function(){
 		let imdbID = $(this).data('id');
 		const button = $(this);
         $.ajax({
-			url: "http://www.omdbapi.com/?apikey=4c39544b&i=" + imdbID,
+			url: "https://www.omdbapi.com/?apikey=4c39544b&i=" + imdbID,
 			method: "GET",
 			success: function(currentMovie){
 				$.post({
