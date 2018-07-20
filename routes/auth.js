@@ -2,15 +2,11 @@ const passport = require('passport');
 const GitHubStrategy = require('passport-github').Strategy;
 const session = require('express-session');
 const cookieParser = require('cookie-parser')
-
 const models = require('../models')
-
 
 const setupAuth = (app) => {
     app.use(cookieParser());
-
     app.use(session({
-
         secret: 'ilywamh4p',
         resave: true,
         saveUninitialized: true,
@@ -19,7 +15,7 @@ const setupAuth = (app) => {
     passport.use(new GitHubStrategy({
         clientID: "75e98565fb885d842b56",
         clientSecret: "7424e30131cb46de420fc3dbfb49df6375e80257",
-        callbackURL: "https://sceneittoo-v2.herokuapp.com/github/auth"
+        callbackURL: "/github/auth"
         // callbackURL: "http://localhost:3000/github/auth"
             }, (accessToken, refreshToken, profile, done) => {
                 console.log(profile);
@@ -49,7 +45,6 @@ const setupAuth = (app) => {
                         // from the database);
                         done(err, null);
                     })
-
             }));
 
     passport.serializeUser(function(user, done) {
@@ -61,12 +56,8 @@ const setupAuth = (app) => {
         passport.deserializeUser(function(id, done) {
         done(null, id);
         });
-
         app.use(passport.initialize());
-
         app.use(passport.session());
-
-
 
         // app.get('/login', (req, res) => {
         //     res.render ('login');

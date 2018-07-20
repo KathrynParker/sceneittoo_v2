@@ -6,7 +6,6 @@ router.get('/', (req, res, next) => {
     res.json({});
 });
 
-
 /* POST data to Movies and Usermovies tables - aintsceneit button*/
 router.post('/saveaintsceneit', (req, res) => {
     models.Movie.findOrCreate(
@@ -33,9 +32,9 @@ router.post('/saveaintsceneit', (req, res) => {
     .then(movie => {
         console.log(movie[0].id);
         models.Usermovie.findOrCreate({
-            where: { 
+            where: {
                 UserId: req.user,
-                MovieId: movie[0].id 
+                MovieId: movie[0].id
             },
             defaults: {
                 sceneitlist: false,
@@ -54,13 +53,7 @@ router.post('/saveaintsceneit', (req, res) => {
     .catch(err => {
         console.log('Could not find or create movie ' + err);
     });
-
-
-    
-
-
 });
-
 
 /* POST data to Movies and Usermovies tables - sceneit button*/
 router.post('/savesceneit', (req, res) => {
@@ -88,9 +81,9 @@ router.post('/savesceneit', (req, res) => {
     .then(movie => {
         console.log(movie[0].id);
         models.Usermovie.findOrCreate({
-            where: { 
+            where: {
                 UserId: req.user,
-                MovieId: movie[0].id 
+                MovieId: movie[0].id
             },
             defaults: {
                 aintsceneit: false,
@@ -111,6 +104,5 @@ router.post('/savesceneit', (req, res) => {
     });
 
 });
-
 
 module.exports = router;

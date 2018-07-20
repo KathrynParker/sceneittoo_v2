@@ -16,8 +16,8 @@
   "production": {
     "username": "postgres",
     "password": null,
-    "database": "sceneittoo",
-    "host": "0.0.0.0",
+    "database": "DATABASE_URL",
+    "host": "127.0.0.1",
     "dialect": "postgres"
   }
 }
