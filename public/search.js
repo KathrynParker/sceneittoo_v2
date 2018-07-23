@@ -46,7 +46,7 @@ $(function(){
 			method: "GET",
 			success: function(currentMovie){
 				$.post({
-					url: "/api/saveaintsceneit",
+					url: "/api/aintsceneit",
 					data: {
 						title: currentMovie.Title,
 						imdbid: currentMovie.imdbID,
@@ -85,7 +85,7 @@ $(function(){
 			method: "GET",
 			success: function(currentMovie){
 				$.post({
-					url: "/api/savesceneit",
+					url: "/api/sceneit",
 					data: {
 						title: currentMovie.Title,
 						imdbid: currentMovie.imdbID,

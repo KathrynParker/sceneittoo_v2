@@ -7,7 +7,7 @@ router.get('/', (req, res, next) => {
 });
 
 /* POST data to Movies and Usermovies tables - aintsceneit button*/
-router.post('/saveaintsceneit', (req, res) => {
+router.post('/aintsceneit', (req, res) => {
     models.Movie.findOrCreate(
         {
             where: {
@@ -56,7 +56,7 @@ router.post('/saveaintsceneit', (req, res) => {
 });
 
 /* POST data to Movies and Usermovies tables - sceneit button*/
-router.post('/savesceneit', (req, res) => {
+router.post('/sceneit', (req, res) => {
     models.Movie.findOrCreate(
         {
             where: {
