@@ -26,11 +26,11 @@ var server = http.createServer(app);
  */
 
 
-// models.sequelize.sync().then(()=> { **COMMENTED OUT FOR HEROKU**
+models.sequelize.sync().then(() => {
   server.listen(port);
   server.on('error', onError);
   server.on('listening', onListening);
-// }); **COMMENTED OUT FOR HEROKU**
+});
 
 /**
  * Normalize a port into a number, string, or false.
