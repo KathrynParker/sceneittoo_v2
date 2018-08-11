@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
         ]
     })
 
-// RENDER the Users "Scene It" movies to sceneItList webpage
+// RENDER the Users "Scene It" movies to sceneitlist webpage
     .then(usermovies => {
         res.render('sceneitlist', {
             title: 'Scene It List',

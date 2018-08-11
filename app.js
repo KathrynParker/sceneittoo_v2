@@ -10,7 +10,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 const setupAuth = require('./routes/auth');
-const sceneItList = require('./routes/sceneItList');
+const sceneitlist = require('./routes/sceneitlist');
 const aintsceneitRouter = require('./routes/aintsceneit');
 const apiRouter = require('./routes/api');
 
@@ -34,7 +34,7 @@ setupAuth(app);
 app.use('/', indexRouter);
 app.use('/api', apiRouter);
 app.use('/users', usersRouter);
-app.use('/sceneItList', sceneItList);
+app.use('/sceneitlist', sceneitlist);
 app.use('/aintsceneit', aintsceneitRouter);
 
 // catch 404 and forward to error handler
