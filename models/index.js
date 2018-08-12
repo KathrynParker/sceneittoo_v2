@@ -9,6 +9,7 @@ var config    = require(__dirname + '/../config/config.js')[env];
 var db        = {};
 
 const dotenv = require('dotenv');
+
 dotenv.load();
 
 if (process.env.DATABASE_URL) {
