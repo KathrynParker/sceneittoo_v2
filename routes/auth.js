@@ -7,7 +7,7 @@ const models = require('../models')
 const setupAuth = (app) => {
     app.use(cookieParser());
     app.use(session({
-        secret: 'ilywamh4p',
+        secret: process.env.SECRET,
         resave: true,
         saveUninitialized: true,
     }));
